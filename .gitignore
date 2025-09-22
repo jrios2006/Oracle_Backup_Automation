@@ -1,3 +1,7 @@
+# Ficheros locales
+config/config.json
+config/credenciales.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
