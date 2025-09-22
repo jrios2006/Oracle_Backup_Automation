@@ -1,0 +1,25 @@
+{
+    "BBDD" : [
+        "Oracle_SERVER",
+        1521,
+        "BBDD(SID)",
+        "USER_ORACLE",
+        "PASS_ORACLE"
+    ],
+   
+    "CORREO" : [
+        "noreply@dominio.com",
+        "smtp.serviciodecorreo.es",
+        465,
+        "noreply@dominio.com",
+        "Password_Correo"
+    ],
+    "SFTP" : [
+        "server_SFTP",
+        2222,
+        "USER_SFTP",
+        "PASS_SFTP",
+        "",
+        ""    
+    ]
+}

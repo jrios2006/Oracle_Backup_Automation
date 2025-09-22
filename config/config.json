@@ -1,0 +1,26 @@
+{
+    "FicheroCredenciales" : "config/credenciales.json",
+    "SQLRutaBackup" : "SELECT DIRECTORY_PATH FROM dba_directories WHERE DIRECTORY_NAME = 'DATA_PUMP_DIR';",
+    "FraseAdvertencias" : "advertencias",
+    "FraseError" : "no ha terminado correctamente",
+    "Backup" :[ 
+        {
+            "Comando" : "expdp",
+            "Esquema" : "ESQUEMA_BBDD",
+            "Password" : "PASSWORD_CIFRADO", 
+            "FicheroBackup" : "backups/%%ESQUEMA%%-%%FECHA%%.dmp",
+            "FicheroLog" : "backups/%%ESQUEMA%%-%%FECHA%%.log",
+            "FicheroComprimido" : "%%ESQUEMA%%-%%FECHA%%.7z"    
+        }
+    ],
+    "ConfiguracionSFTP" : {
+        "RutaInicialSFTP" : "/RUTA_INICIAL_SFTP",
+        "RutaSFTP" : "BackupOracle",
+        "NumeroBackupsaMantener" : 5
+    },
+    "AvisoCorreo" : {
+        "Destinatario" : "it@dominio.com",
+        "Asunto" : "Proceso de backup del servidor %%SERVIDOR%% de la base de datos %%BBDD%%",
+        "Mensaje" : "<p>Revisar log y ruta del proceso de backup con estos datos.</p>"
+    }
+}
